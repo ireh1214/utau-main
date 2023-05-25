@@ -97,8 +97,8 @@ export default function Notice() {
                 </p>
                 <h2>Basic Guidelines</h2>
                 <p>
-                  ■ The copyrights of "Hitch" and "Hetch" belong to the
-                  administrator, @Sound_of_dog_.
+                  ■ The copyrights of &quot;Hitch&quot; and &quot;Hetch&quot;
+                  belong to the administrator, @Sound_of_dog_.
                 </p>
                 <p>
                   ■ These voicebanks are created for UTAU and open UTAU, and can
@@ -132,7 +132,7 @@ export default function Notice() {
                   ■ Regarding the creation process, I am not heavily involved as
                   long as you maintain personal respect towards the
                   administrator who created the voicebanks. (But seriously,
-                  please show me. I'm curious.)
+                  please show me. I&apos;m curious.)
                 </p>
                 <p>
                   ■ Additionally, if you need illustrations for covering Hitch,
@@ -206,7 +206,7 @@ export default function Notice() {
               <div>
                 <p>
                   <b>你好！</b>
-                  我是音乐创作练习者(@Sound_of_dog_)，以下简称为"Hi-wolfy"，这是我的音频合成引擎发布网站。由于之前的Wix网站发生了很多变化，我完全迁移到了我的新网站上！
+                  我是音乐创作练习者(@Sound_of_dog_)，以下简称为&quot;Hi-wolfy&quot;，这是我的音频合成引擎发布网站。由于之前的Wix网站发生了很多变化，我完全迁移到了我的新网站上！
                 </p>
                 <p>
                   在UTAU的所有方面，我仍然是个业余爱好者。对于那些给予我建议和指导的人，我始终心存感激。
@@ -214,7 +214,7 @@ export default function Notice() {
                 <h2>基本事项</h2>
                 <p>
                   ■
-                  请明确说明，"Hitch"和"Hetch"的版权归管理员@sound_of_dog_所有。
+                  请明确说明，&quot;Hitch&quot;和&quot;Hetch&quot;的版权归管理员@sound_of_dog_所有。
                 </p>
                 <p>
                   ■ 这些音频库是为UTAU和open
