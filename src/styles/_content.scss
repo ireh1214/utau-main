@@ -1,0 +1,338 @@
+@charset 'utf-8';
+@import '_mixin';
+
+.info_header {
+  height: 58px;
+  background-color: #fff;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include titleFont;
+  font-size: $titleSize;
+}
+
+.utau_wrap {
+  width: 100%;
+  min-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+
+  .utau_indexContainer {
+    width: 100%;
+    min-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 10px;
+
+    .about_img {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 500px;
+      background-image: url('/img/about_img.png');
+      background-position: center;
+      opacity: 0.7;
+      position: relative;
+      transition: 0.3s ease-in-out;
+      animation-name: back_ani;
+      animation-delay: 2s;
+      animation-duration: 30s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; /* 무한 반복 설정 */
+      animation-fill-mode: forwards;
+    }
+
+    .img_inner {
+      width: 100vw;
+      position: absolute;
+      top: 7vh;
+      left: 0;
+      padding: 0px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > div {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .hitch_full {
+        width: 700px;
+        min-width: 650px;
+        height: 920px;
+        margin-right: auto;
+        background-image: url('/img/hitchfull.png');
+      }
+      .hetch_full {
+        width: 830px;
+        min-width: 800px;
+        height: 820px;
+        margin-left: auto;
+        margin-top: auto;
+        background-image: url('/img/hetch2full.png');
+      }
+    }
+    .cont {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        width: 150px;
+        height: 46px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #1b245b;
+        transition: 0.5s ease-in-out;
+        border-radius: 50px;
+        z-index: 10;
+        position: relative;
+        border-collapse: collapse;
+
+        &::before {
+          transition: 0.5s ease-in-out;
+          content: '';
+          position: absolute;
+          top: -24px;
+          display: block;
+          margin: 0 auto;
+          width: 15px;
+          height: 15px;
+          background-image: url('/img/hover.png');
+          background-size: contain;
+          opacity: 0;
+        }
+
+        &:hover {
+          width: 170px;
+          background: rgb(0, 20, 153);
+          background: linear-gradient(
+            18deg,
+            rgba(0, 20, 153, 1) 0%,
+            rgba(0, 93, 215, 1) 54%,
+            rgba(77, 229, 255, 1) 100%
+          );
+          color: #fff;
+          border: 1px solid #0044a4;
+          letter-spacing: 2px;
+          font-weight: bold;
+
+          &::before {
+            content: '';
+            opacity: 1;
+            animation-name: float;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite; /* 무한 반복 설정 */
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+    }
+  }
+
+  .utau_container {
+    max-width: 850px;
+    min-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 10px;
+
+    .lang {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 20px;
+
+      button {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        width: 70px;
+        height: 30px;
+        margin-right: 4px;
+        font-size: 12px;
+
+        &:nth-child(4) {
+          font-size: 10.5px;
+        }
+      }
+    }
+
+    .notice {
+      width: 850px;
+      min-width: 280px;
+      margin: 0 auto;
+      padding: 42px 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: #00183a;
+        @include titleFont;
+        font-size: 30px;
+        margin-bottom: 24px;
+        margin-top: 40px;
+        padding-bottom: 10px;
+        font-weight: 900;
+        border-bottom: 1px solid #000;
+      }
+
+      .text_inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        b,
+        p {
+          color: #00183a;
+          width: 100%;
+        }
+      }
+
+      p {
+        margin-top: 18px;
+        line-height: 1.4;
+        width: 100%;
+      }
+    }
+
+    // -----------
+  }
+
+  .cover_img {
+    width: 400px;
+    height: 300px;
+    background-image: url('/img/music.png');
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+
+  .utau_cover_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding: 100px 0;
+
+    .utau_cover {
+      margin: 10px auto;
+    }
+
+    h4 {
+      width: 100%;
+      height: 100px;
+      background-position: 0px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      font-size: $titleSize;
+      font-weight: 900;
+      letter-spacing: -0.4px;
+    }
+
+    .hitch_cover {
+      background-image: url('/img/hitchHead.png');
+    }
+
+    .hetch_cover {
+      background-image: url('/img/hetchHead.png');
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #000;
+      width: 100%;
+      margin: 40px auto;
+    }
+  }
+
+  .utau_download {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 340px;
+      height: 453px;
+      border: 1px solid #000;
+      transition: 0.4s ease-out;
+
+      ul {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-end;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        li {
+          &:nth-child(1) {
+            font-size: 24px;
+            background-color: #000;
+            padding: 6px 10px 0px;
+          }
+
+          &:nth-child(2) {
+            background-color: #fff;
+            color: #000;
+            padding: 3px 10px 0px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+    .hitch {
+      background-image: url('/img/1-2.png');
+      margin-right: 40px;
+      background-color: #99d8f5;
+      &:hover {
+        background-image: url('/img/1.png');
+        background-color: #76b1ff;
+      }
+    }
+    .hetch {
+      background-image: url('/img/2-2.png');
+      background-color: #919191;
+      &:hover {
+        background-image: url('/img/2.png');
+        background-color: #726c6c;
+      }
+    }
+  }
+}

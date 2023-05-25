@@ -1,0 +1,46 @@
+// Breakpoints
+$breakpoint-tablet: 1400px;
+$breakpoint-mobile: 420px;
+$breakpoint-mobile2: 360px;
+
+/********** common  **********/
+
+$mainColor: #06203d;
+
+$titleSize: 24px;
+
+@font-face {
+  font-family: 'SUITE';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
+    format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dovemayo_wild';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Dovemayo_wild.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'SUITE';
+}
+
+@mixin titleFont {
+  font-family: 'Dovemayo_wild';
+  font-weight: 800;
+  font-style: normal;
+}
+
+@mixin clearBoth {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+@mixin txtHide {
+  text-indent: -9999px;
+  font-size: 0px;
+}
