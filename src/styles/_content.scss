@@ -18,6 +18,7 @@
 .utau_wrap {
   width: 100%;
   min-width: 1280px;
+  overflow-x: scroll;
   margin: 0 auto;
   min-height: 100vh;
   height: 100%;
@@ -27,15 +28,15 @@
   .utau_indexContainer {
     width: 100%;
     min-width: 1200px;
+    overflow-x: scroll;
     margin: 0 auto;
     text-align: center;
-    padding: 0px 10px;
+    padding: 0px;
 
     .about_img {
       width: 100%;
-
       margin: 0 auto;
-      height: 700px;
+      height: 100vh;
       background-image: url('/img/about_img.png');
       background-position: center;
       background-size: 100%;
@@ -44,7 +45,7 @@
       transition: 0.3s ease-in-out;
       animation-name: back_ani;
       animation-delay: 1.5s;
-      animation-duration: 50s;
+      animation-duration: 150s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite; /* 무한 반복 설정 */
       animation-fill-mode: forwards;
@@ -96,7 +97,7 @@
         font-size: 18px;
         text-decoration: none;
         color: #000;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -108,7 +109,7 @@
         border-collapse: collapse;
 
         &:nth-child(2) {
-          margin: 0px 10px 0;
+          margin: 0px 40px 0;
         }
 
         &::before {
